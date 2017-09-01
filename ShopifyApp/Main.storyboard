@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ggc-dG-2an">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lUI-KE-vhD">
+            <objects>
+                <navigationController id="Ggc-dG-2an" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1hY-L5-A99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SgD-It-KhA" kind="relationship" relationship="rootViewController" id="fzI-h4-36k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVI-Fg-Br6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="81"/>
+        </scene>
+        <!--Shopify View Controller-->
+        <scene sceneID="Zco-xE-uiW">
+            <objects>
+                <viewController id="SgD-It-KhA" customClass="ShopifyViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3F-Ji-c6s"/>
+                        <viewControllerLayoutGuide type="bottom" id="10k-l7-g8H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GaA-sI-vzM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Spent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li2-Ry-QmY">
+                                <rect key="frame" x="127" y="149" width="120" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="RWR-qp-niY"/>
+                                    <constraint firstAttribute="height" constant="20" id="Xmp-gq-tb0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Bags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9G-Vm-yeN">
+                                <rect key="frame" x="120" y="394" width="135" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="3W1-Aw-haT"/>
+                                    <constraint firstAttribute="height" constant="20" id="dsv-kd-Gbt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIU-aj-Eqv">
+                                <rect key="frame" x="127" y="201" width="120" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="AtU-kO-S6Q"/>
+                                    <constraint firstAttribute="height" constant="45" id="dpg-vg-7rL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-Oj-t1x">
+                                <rect key="frame" x="127" y="444" width="120" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="439-Gc-0E2"/>
+                                    <constraint firstAttribute="width" constant="120" id="Dil-II-w0m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QIU-aj-Eqv" firstAttribute="top" secondItem="li2-Ry-QmY" secondAttribute="bottom" constant="32" id="4DF-Uw-n27"/>
+                            <constraint firstItem="u9G-Vm-yeN" firstAttribute="centerX" secondItem="GaA-sI-vzM" secondAttribute="centerX" id="4Fn-fN-ESC"/>
+                            <constraint firstItem="li2-Ry-QmY" firstAttribute="centerX" secondItem="GaA-sI-vzM" secondAttribute="centerX" id="JER-X8-c5I"/>
+                            <constraint firstItem="li2-Ry-QmY" firstAttribute="top" secondItem="S3F-Ji-c6s" secondAttribute="bottom" constant="85" id="KF3-LL-z0b"/>
+                            <constraint firstItem="NjX-Oj-t1x" firstAttribute="centerX" secondItem="GaA-sI-vzM" secondAttribute="centerX" id="PhW-6v-ELC"/>
+                            <constraint firstItem="NjX-Oj-t1x" firstAttribute="top" secondItem="u9G-Vm-yeN" secondAttribute="bottom" constant="30" id="dDm-A4-JYK"/>
+                            <constraint firstItem="u9G-Vm-yeN" firstAttribute="top" secondItem="QIU-aj-Eqv" secondAttribute="bottom" constant="148" id="qC7-LT-etP"/>
+                            <constraint firstItem="QIU-aj-Eqv" firstAttribute="centerX" secondItem="GaA-sI-vzM" secondAttribute="centerX" id="u5T-sQ-wtb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pCF-cr-3wf"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="QIU-aj-Eqv" id="Yul-LT-L6A"/>
+                        <outlet property="amountTitleLabel" destination="li2-Ry-QmY" id="pi6-0f-JlP"/>
+                        <outlet property="numberOfBagsLabel" destination="NjX-Oj-t1x" id="vFu-Tk-Yyi"/>
+                        <outlet property="numberOfBagsTitleLabel" destination="u9G-Vm-yeN" id="FGX-rt-aJE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6m-uj-PbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="80.50974512743629"/>
+        </scene>
+    </scenes>
+</document>
